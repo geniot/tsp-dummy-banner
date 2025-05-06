@@ -29,9 +29,7 @@ const (
 )
 
 func main() {
-
 	rl.InitWindow(screenWidth, screenHeight, "TrimUI Placeholder App")
-	rl.SetConfigFlags(rl.FlagVsyncHint)
 
 	var (
 		titleMessage         = "Placeholder App"
@@ -61,7 +59,7 @@ func main() {
 		if rl.IsKeyPressed(rl.KeyQ) || (rl.IsGamepadButtonDown(gamePadId, menuCode) && rl.IsGamepadButtonDown(gamePadId, startCode)) {
 			shouldExit = true
 		}
-		time.Sleep(1000 / 60)
+		time.Sleep(1_000_000_000 / 60)
 	}
 	rl.CloseWindow()
 }
