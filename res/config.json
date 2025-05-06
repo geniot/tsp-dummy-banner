@@ -1,0 +1,6 @@
+{
+  "label":    "Dummy",
+  "icon":     "icon.png",
+  "launch":   "launch.sh",
+  "description":      "Placeholder App"
+}
